@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./pswd.css">
+    <title>password generate </title>
+    <script src="/html/password/pswd.js"></script>
+</head>
+<body>
+    
+        <h1 >Random Password </h1>
+        <h3>Click on the button to generate random password.</h3>
+        <br>
+       <button onclick="gfg_Run()">
+            Generate Password
+        </button>
+        <br>
+       <div>
+        <p id="password"></p>
+        </div>
+        <script>
+            var el_down = document.getElementById("password");
+              
+                    function generateP() {
+                var pass = '';
+                var str = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' +
+                        'abcdefghijklmnopqrstuvwxyz0123456789@#$';
+                  
+                for (let i = 1; i <= 8; i++) {
+                    var char = Math.floor(Math.random()
+                                * str.length + 1);
+                      
+                    pass += str.charAt(char)
+                }
+                  
+                return pass;
+            }
+              
+            function gfg_Run() {
+                el_down.innerHTML = generateP();
+            }
+            </script>
+       
+</body>
+</html>

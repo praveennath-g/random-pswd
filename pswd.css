@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color:beige;
+
+}
+h1{
+      margin: 0;
+      padding: 10px;
+      text-transform: uppercase;
+      
+}
+h3{
+    text-decoration: dotted;
+    text-transform: uppercase;
+}
+button ,onclick{
+        border: 0;
+        outline: 0;
+        background: #019f55;
+        color: #fff;
+        font-size: 22px;
+        font-weight: 300;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 16px 26px;
+        border-radius: 5px;
+        cursor: pointer;
+    
+}
